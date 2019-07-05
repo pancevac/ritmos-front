@@ -7,7 +7,7 @@
         <!-- <span class="font-weight-light">MATERIAL DESIGN</span> -->
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn flat href="#">
+      <v-btn flat href="/login">
         <span class="mr-2">Login</span>
       </v-btn>
     </v-toolbar>
