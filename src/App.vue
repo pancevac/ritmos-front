@@ -1,7 +1,7 @@
 <template>
   <v-app>
     
-    <navbar/>
+    <navbar v-if="!isLogged"/>
 
     <v-content>
       <router-view></router-view>
@@ -11,18 +11,21 @@
 
 <script>
 import Navbar from './components/Navbar'
-import HelloWorld from './components/HelloWorld'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     Navbar
   },
-  data () {
-    return {
-      //
+  
+  /**
+   * This is temporary, until we implement auth logic.
+   */
+  computed: {
+    isLogged() {
+      return this.$router.currentRoute.name == 'login' || this.$router.currentRoute.name == 'register';
     }
   }
+
 }
 </script>

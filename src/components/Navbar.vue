@@ -12,7 +12,7 @@
       </v-btn>
     </v-toolbar>
 
-    <v-navigation-drawer v-model="drawer" absolute temporary>
+    <v-navigation-drawer fixed app v-model="drawer">
       <v-list class="pa-1">
         <v-list-tile avatar>
           <v-list-tile-avatar>
